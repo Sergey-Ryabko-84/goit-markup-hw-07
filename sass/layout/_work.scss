@@ -1,4 +1,4 @@
-.section.work {
+.work {
   padding-top: 0;
 }
 
@@ -6,17 +6,17 @@
   display: flex;
 }
 
-.work-list-item {
+.work-list__item {
   position: relative;
   width: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
 }
 
-.work-list-item:last-child {
+.work-list__item:last-child {
   margin-right: 0;
 }
 
-.work-list-item-text {
+.work-list__text {
   position: absolute;
   bottom: 0;
   left: 0;

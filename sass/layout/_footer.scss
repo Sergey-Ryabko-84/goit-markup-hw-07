@@ -5,32 +5,34 @@
   background-color: #2f303a;
 }
 
-.footer .container {
+.footer__container {
   position: relative;
   display: flex;
 }
 
-.footer .logo {
+.footer__logo {
   display: inline-block;
   margin-bottom: 20px;
   padding-top: 3px;
 }
 
-.footer .logo .end {
+.footer__logo--end {
   color: var(--white-text-color);
 }
 
 /* АДРЕС */
 
-.address-list-item:not(:last-child) {
+.address-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address-list .address.link {
+.address-list__link--address {
+  font-style: normal;
+  line-height: 1.71;
   color: var(--white-text-color);
 }
 
-.address-list .link {
+.address-list__link {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
@@ -38,10 +40,10 @@
   transition: color 250ms var(--timing-function);
 }
 
-.address-list .address.link:hover,
-.address-list .address.link:focus,
-.address-list .link:hover,
-.address-list .link:focus {
+.address-list__link--address:hover,
+.address-list__link--address:focus,
+.address-list__link:hover,
+.address-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -52,29 +54,29 @@
   padding-top: 15px;
 }
 
-.footer-soc-title {
+.footer-soc__title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-text-color);
 }
 
-.footer-soc-list {
+.social-list {
   display: flex;
   margin-top: 20px;
 }
 
-.footer-soc-item {
+.social-list__item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
 }
 
-.footer-soc-item:last-child {
+.social-list__item:last-child {
   margin-right: 0;
 }
 
-.footer-soc-link {
+.social-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,25 +90,25 @@
               box-shadow 250ms var(--timing-function);
 }
 
-.footer-soc-icon {
+.social-list__icon {
   fill: currentColor;
 }
 
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+.social-list__link:hover,
+.social-list__link:focus {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* ФОРМА */
 
-.footer-form {
+.mailing-form {
   position: absolute;
   right: 15px;
   top: calc(75px - 60px);
 }
 
-.footer-form-lable {
+.mailing-form__lable {
   display: block;
   margin-bottom: 20px;
 
@@ -115,7 +117,7 @@
   color: var(--white-text-color);
 }
 
-.footer-form-input {
+.mailing-form__input {
   margin-right: 8px;
   padding-left: 16px;
   padding-right: 16px;
@@ -131,14 +133,14 @@
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));  
 }
 
-.footer-form-input::placeholder {
+.mailing-form__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
 
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-form-btn {
+.mailing-form__btn {
   position: relative;
   padding-left: 28px;
   
@@ -148,7 +150,7 @@
   border-radius: 4px;
 }
 
-.footer-btn-icon {
+.mailing-form__btn-icon {
   position: absolute;
   right: 28px;
   top: 50%;

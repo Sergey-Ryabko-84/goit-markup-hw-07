@@ -4,11 +4,11 @@
   margin-bottom: 50px;
 }
 
-.filter-list-item:not(:last-child) {
+.filter-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-list-btn {
+.filter-list__btn {
   display: inline-block;
   padding: 6px 22px;
   border-radius: 4px;
@@ -28,8 +28,8 @@
               box-shadow 250ms var(--timing-function);
 }
 
-.filter-list-btn:hover,
-.filter-list-btn:focus {
+.filter-list__btn:hover,
+.filter-list__btn:focus {
   color: var(--white-text-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -40,56 +40,56 @@
   flex-wrap: wrap;
 }
 
-.projects-list-item {
+.projects-list__item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.projects-list-item:nth-child(3n) {
+.projects-list__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.projects-list-item:nth-last-child(-n + 3) {
+.projects-list__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.projects-list-link {
+.projects-list__link {
   display: block;
 
   transition: box-shadow 250ms var(--timing-function);
 }
 
-.projects-list-link:hover,
-.projects-list-link:focus {
+.projects-list__link:hover,
+.projects-list__link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.projects-list-box {
+.projects-list__box {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 
-.projects-list-title {
+.projects-list__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.projects-list-text {
+.projects-list__text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-text-color);
 }
 
-.projects-list-cover-wrap {
+.projects-list__cover-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.projects-list-cover-text {
+.projects-list__cover-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -109,7 +109,7 @@
   overflow: auto;
 }
 
-.projects-list-link:hover .projects-list-cover-text,
-.projects-list-link:focus .projects-list-cover-text {
+.projects-list__link:hover .projects-list__cover-text,
+.projects-list__link:focus .projects-list__cover-text {
   transform: translateY(0);
 }

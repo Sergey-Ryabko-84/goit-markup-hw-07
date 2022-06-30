@@ -2,16 +2,16 @@
   display: flex;
 }
 
-.feature-list-item {
+.feature-list__item {
   width: calc((100% - 3 * 30px) / 4);
   margin-right: 30px;
 }
 
-.feature-list-item:last-child {
+.feature-list__item:last-child {
   margin-right: 0;
 }
 
-.feature-list-icon-box {
+.feature-list__box {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -20,14 +20,14 @@
   background-color: #f5f4fa;
 }
 
-.feature-list-title {
+.feature-list__title {
   margin-bottom: 10px;
 
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.feature-list-text {
+.feature-list__text {
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
