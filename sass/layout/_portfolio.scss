@@ -57,7 +57,7 @@
 .projects-list__link {
   display: block;
 
-  transition: box-shadow 250ms var(--timing-function);
+  @include transition(box-shadow);
 }
 
 .projects-list__link:hover,
@@ -94,7 +94,7 @@
   top: 0;
   left: 0;
   transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
+  @include transition(transform);
 
   display: flex;
   justify-content: center;

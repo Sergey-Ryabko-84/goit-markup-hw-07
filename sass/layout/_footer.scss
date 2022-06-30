@@ -30,6 +30,8 @@
   font-style: normal;
   line-height: 1.71;
   color: var(--white-text-color);
+
+  @include transition(color);
 }
 
 .address-list__link {
@@ -37,7 +39,7 @@
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 
-  transition: color 250ms var(--timing-function);
+  @include transition(color);
 }
 
 .address-list__link--address:hover,

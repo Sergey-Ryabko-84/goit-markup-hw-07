@@ -107,8 +107,12 @@ body {
   text-align: center;
   color: var(--white-text-color);
   background: var(--accent-color);
-  -webkit-transition: background 250ms var(--timing-function);
-  transition: background 250ms var(--timing-function);
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
 }
 
 .primary__btn:hover,
@@ -183,8 +187,12 @@ body {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
   border-radius: 50%;
-  -webkit-transition: fill 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function);
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
 }
 
 .close-btn:hover,
@@ -264,8 +272,12 @@ body {
   padding-right: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  -webkit-transition: border-color 250ms var(--timing-function);
-  transition: border-color 250ms var(--timing-function);
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
 }
 
 .form__input-thumb {
@@ -278,8 +290,12 @@ body {
   left: 12px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: fill 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function);
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
 }
 
 .form__input:focus {
@@ -299,6 +315,12 @@ body {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
 }
 
 .form__textarea:focus {
@@ -323,14 +345,18 @@ body {
   border-radius: 2px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-transition: background-color 250ms var(--timing-function), border-color 250ms var(--timing-function);
-  transition: background-color 250ms var(--timing-function), border-color 250ms var(--timing-function);
+  -webkit-transition: background-color 2500ms var(--timing-function), border-color 2500ms var(--timing-function);
+  transition: background-color 2500ms var(--timing-function), border-color 2500ms var(--timing-function);
 }
 
 .form__checkbox-icon {
   fill: transparent;
-  -webkit-transition: fill 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function);
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
 }
 
 .form__checkbox-lable {
@@ -342,8 +368,12 @@ body {
           align-items: center;
   line-height: 1.71px;
   color: var(--secondary-text-color);
-  -webkit-transition: text-shadow 250ms var(--timing-function);
-  transition: text-shadow 250ms var(--timing-function);
+  -webkit-transition-property: text-shadow;
+  transition-property: text-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
 }
 
 .form__checkbox:checked + .form__checkbox-lable,
@@ -440,8 +470,12 @@ body {
   padding-bottom: 12px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  -webkit-transition: color 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
 }
 
 .site-nav__link:hover,
@@ -473,8 +507,12 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  -webkit-transition: color 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
 }
 
 .auth-nav__icon {
@@ -755,14 +793,24 @@ body {
   font-style: normal;
   line-height: 1.71;
   color: var(--white-text-color);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
 }
 
 .address-list__link {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: color 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
 }
 
 .address-list__link--address:hover,
@@ -977,10 +1025,14 @@ body {
 
 .projects-list__link {
   display: block;
-  -webkit-transition: -webkit-box-shadow 250ms var(--timing-function);
-  transition: -webkit-box-shadow 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
 }
 
 .projects-list__link:hover,
@@ -1019,10 +1071,14 @@ body {
   left: 0;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform 250ms var(--timing-function);
-  transition: -webkit-transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
