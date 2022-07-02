@@ -15,9 +15,10 @@
   background: var(--accent-color);
 
   @include transition(background);
+
+  &:hover,
+  &:focus {
+    background: #188ce8;
+  }
 }
 
-.primary__btn:hover,
-.primary__btn:focus {
-  background: #188ce8;
-}

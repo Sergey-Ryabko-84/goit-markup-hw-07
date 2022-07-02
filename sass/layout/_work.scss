@@ -10,10 +10,10 @@
   position: relative;
   width: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
-}
 
-.work-list__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .work-list__text {

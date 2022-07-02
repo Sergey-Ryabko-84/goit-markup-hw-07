@@ -1,20 +1,28 @@
-@import './utils/variables';
-@import './base/reset';
-@import './base/common';
-@import './utils/hidden';
-@import './utils/mixins';
+@import './base/index';
+@import './utils/index';
+@import './components/index';
+@import './layout/index';
 
-@import './components/container';
-@import './components/current';
-@import './components/button';
-@import './components/section';
-@import './components/modal';
 
-@import './layout/header';
-@import './layout/hero';
-@import './layout/features';
-@import './layout/work';
-@import './layout/team';
-@import './layout/clients';
-@import './layout/footer';
-@import './layout/portfolio';
+// @import './utils/variables';
+// @import './base/normalize';
+// @import './base/reset';
+// @import './base/fonts';
+// @import './base/common';
+// @import './utils/hidden';
+// @import './utils/mixins';
+
+// @import './components/container';
+// @import './components/logo';
+// @import './components/button';
+// @import './components/section';
+// @import './components/modal';
+
+// @import './layout/header';
+// @import './layout/hero';
+// @import './layout/features';
+// @import './layout/work';
+// @import './layout/team';
+// @import './layout/clients';
+// @import './layout/footer';
+// @import './layout/portfolio';
